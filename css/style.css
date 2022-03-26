@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'hansief';
+    src: url(fontes/Hansief.otf) format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    color: black;
+    font: normal normal 1.05em 'bebas neue';
+    /*font: style, weight, size, family*/
+    
+}
+
+:root{
+    --cor01: #bf3056;
+    --cor02: #d92b3a;
+    --cor03: #f25835;
+    --cor04: #f28f38;
+    --cor05: #f28963;
+    --fonte-padrao: 'Bebas Neue', cursive;
+    --fonte-destaque: 'hansief';
+}
+
+img#logo{
+    width: 80px;
+    padding-bottom: 10px;
+    position: absolute;
+    transform: translate(5vw);
+}
+
+nav{
+    text-align: end;
+    padding: 30px;
+}
+
+nav a{
+    padding: 15px;
+    color: var(--cor01);
+    transition: all 0.5s ease;
+}
+
+nav a:hover{
+    transform: scale(2);
+    text-decoration: overline;
+}
+
+h1, h2{
+    background-image: linear-gradient(to right, var(--cor01), var(--cor03));
+    color: var(--cor04);
+    text-align: center;
+    font: normal normal 1.5em var(--fonte-destaque);
+    text-decoration: underline;
+    padding: 15px;
+}
+
+h2{
+    font-family: var(--fonte-padrão);
+    font-size: 1.5em;
+    text-decoration: none;
+    padding-top: 0;
+}
+
+img.slide{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: 100%;
+    
+}
+
+div.aaa{
+    padding: 50px;
+    background-image: url(../imagens/bg-img-apresentacao.png);
+    background-attachment: fixed;
+    height: 45vh;
+    
+}
+
+div.borda{
+    background-color: white;
+    border: #bf3056 solid 10px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transform: translate(10vw);
+}
+
+img.apresentacao {
+    width: 400px;
+    position: absolute;
+    transform: translate(10vw);
+    padding: 15px;
+}
+
+div.apresentacao {
+    position: absolute;
+    transform: translate(40vw);
+    width: 40vw;
+}
+
+div.apresentacao > h3{
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    color: var(--cor01);
+}
+
+div.apresentacao > p{
+    padding: 15px;
+    text-align: justify;
+    color: var(--cor01);
+}
+
+p.slidetext{
+    background-color: aqua;
+    position: absolute;
+    transform: translate(47.5vw,28.5vh);
+}
+
+div.sociais > a img {
+    width: 30px;
+}
+
+#artstation {
+    position:absolute;
+    transform: translate(50px);
+    transform: translateY(5vh);
+
+}
+
+#behance{
+    position:absolute;
+    transform: translateY(10vh);
+
+}
+
+#discord{
+    position:absolute;
+    transform: translateY(15vh);
+
+}
+
+#instagram{
+    position:absolute;
+    transform: translateY(20vh);
+
+}
+
+#linkedin{
+    position:absolute;
+    transform: translateY(25vh);
+
+}
+
+#pinterest{
+    position:absolute;
+    transform: translateY(30vh);
+
+}
+
+#twitter{
+    position:absolute;
+    transform: translateY(35vh);
+
+}
+
+#WhatsApp{
+    position:absolute;
+    transform: translateY(40vh);
+
+}
+footer{
+    background-image: linear-gradient(to right, var(--cor03), var(--cor01));
+    color: var(--cor04);
+}
+footer > h3{
+    font-family: var(--fonte-destaque);
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+footer > p, a {
+    
+    text-align: center;
+    
+}
